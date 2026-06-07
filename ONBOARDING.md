@@ -136,24 +136,37 @@ Cada unidad de trabajo debe tener un issue. Esto incluye:
 
 ### Labels estándar
 
-| Label | Color | Uso |
-|-------|-------|-----|
-| `bug` | rojo | Algo no funciona |
-| `feature` | verde | Nueva funcionalidad |
-| `docs` | azul claro | Documentación |
-| `actividad-lab` | amarillo | Tarea operativa del laboratorio |
-| `prioridad: alta` | naranja | Urgente |
-| `prioridad: media` | amarillo | Normal |
-| `prioridad: baja` | gris | Puede esperar |
-| `bloqueado` | negro | Depende de otro issue |
+Los labels clasifican el área temática y el estado de un issue. Se pueden combinar: un issue puede tener `firmware` + `bug`, o `hardware` + `bloqueado` al mismo tiempo.
+
+**Área temática** — describe de qué trata el issue:
+
+| Label | Descripción |
+|-------|-------------|
+| `administración` | Tareas que involucren relevamientos, organización o cualquiera similar |
+| `documentación` | Tareas relacionadas a confección de artículos, documentos, apuntes o presentaciones |
+| `firmware` | Tareas relacionadas a software embebido |
+| `fpga` | Tareas relacionadas a FPGA |
+| `hardware` | Tareas de diseño, ensayo o fabricación de circuitos |
+| `investigación` | Tareas relacionadas a capacitaciones e investigación sobre alguna temática |
+| `testing` | Ensayos, validación y verificación de desarrollos existentes |
+| `drivers` | Desarrollo o mantenimiento de drivers y HALs de periféricos |
+| `rtos` | Tareas relacionadas a sistemas operativos de tiempo real |
+| `pcb` | Diseño de circuito impreso, revisión de layout o fabricación |
+
+**Estado / condición** — se agregan sobre el label temático cuando aplica:
+
+| Label | Descripción |
+|-------|-------------|
+| `bug` | Comportamiento incorrecto o inesperado en cualquier área |
+| `bloqueado` | Issue que no puede avanzar por una dependencia externa |
 
 ### Ciclo de vida de un issue
 
 ```
-Backlog → To Do → In Progress → In Review → Done
+Backlog → Todo → En proceso → En revisión → Terminado
 ```
 
-Cuando empezás a trabajar en un issue, movelo a **In Progress** en el tablero y creá la rama correspondiente.
+Cuando empezás a trabajar en un issue, movelo a **En proceso** en el tablero y creá la rama correspondiente.
 
 ---
 
@@ -161,7 +174,24 @@ Cuando empezás a trabajar en un issue, movelo a **In Progress** en el tablero y
 
 ### Cuándo abrir un PR
 
-Cuando una rama está lista para revisión. No esperes a tener todo perfecto: podés abrir un **Draft PR** mientras trabajás para visibilidad del equipo.
+Cuando una rama está lista para revisión. No esperes a tener todo perfecto: podés abrir un **Draft PR** mientras trabajás para visibilidad del equipo. Un Draft PR es preferible a usar `[WIP]` en el título — GitHub lo indica visualmente y bloquea el merge accidental.
+
+### Título del PR
+
+Usamos el mismo estilo que los commits: **Conventional Commits**. Esto permite que la lista de PRs sea escaneable con la misma lógica que el historial, sin agregar una convención nueva.
+
+```
+<tipo>(<scope opcional>): <descripción corta>
+```
+
+Ejemplos:
+
+```
+feat(spi): agregar driver para sensor MPU6050
+fix(uart): corregir pérdida de datos en interrupción RX
+docs(readme): agregar diagrama de conexión
+chore(ci): actualizar versión de arm-none-eabi-gcc
+```
 
 ### Cómo crear un PR
 
@@ -205,31 +235,37 @@ La organización tiene dos tipos de tableros:
 Todos los tableros usan las mismas columnas:
 
 ```
-📥 Backlog  →  📋 To Do  →  🔧 In Progress  →  👀 In Review  →  ✅ Done
+📥 Backlog  →  📋 Todo  →  🚧 Bloqueado  →  🔧 En proceso  →  👀 En revisión  →  ✅ Terminado
 ```
 
 | Columna | Significado |
 |---------|-------------|
 | **Backlog** | Ideas y tareas no planificadas aún |
 | **Todo** | Tareas listas para arrancar |
-| **Bloquedo** | Tareas con las que no se puede avanzar aún |
+| **Bloqueado** | Tareas con las que no se puede avanzar por una dependencia externa |
 | **En proceso** | En trabajo activo (máx. 2 por persona) |
 | **En revisión** | PR abierto, esperando revisión |
 | **Terminado** | Completadas y mergeadas |
 
+Un item en **Bloqueado** debe tener un comentario explicando qué lo bloquea y, si aplica, una referencia al issue del que depende.
+
 ### Campos personalizados de cada item
+
+Los campos que usamos en el tablero son:
 
 | Campo | Tipo | Uso |
 |-------|------|-----|
-| `Estimación` | Número | Horas estimadas |
-| `Tipo` | Select | `Feature / Bug / Docs / Actividad` |
-| `Prioridad` | Select | `Alta / Media / Baja` |
+| `Priority` | Select | `Urgent / High / Medium / Low` — prioridad del item |
+| `Start date` | Fecha | Fecha en que se empieza a trabajar en el item |
+| `Target date` | Fecha | Fecha límite o de entrega esperada |
+
+Las fechas son especialmente importantes: son las que alimentan la vista **Roadmap** del tablero, que permite ver la distribución temporal de los items en curso y planificados. Un item sin fechas no aparece en el roadmap. Completarlas es obligatorio para cualquier item en **Todo** o superior.
 
 ### Reglas del tablero
 
-- **No cerrar items manualmente**: cerrar el issue o mergear el PR los mueve automáticamente a Done
+- **No cerrar items manualmente**: cerrar el issue o mergear el PR los mueve automáticamente a Terminado
 - **Límite WIP**: máximo 2 items en **En proceso** por persona
-- **Todo item en In Progress debe tener un Assignee**
+- **Todo item en En proceso debe tener un Assignee**
 
 ---
 
