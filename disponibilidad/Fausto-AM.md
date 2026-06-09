@@ -42,7 +42,7 @@ Dejá vacío lo que no aplica.
 
 Al abrir este PR confirmo que:
 
-- [ ] Leí el documento [ONBOARDING.md](../ONBOARDING.md) completo
-- [ ] Entiendo las convenciones de commits y ramas
-- [ ] Entiendo cómo usar los tableros de GitHub Projects
-- [ ] Entiendo las reglas de issues y PRs
+- [x] Leí el documento [ONBOARDING.md](../ONBOARDING.md) completo
+- [x] Entiendo las convenciones de commits y ramas
+- [x] Entiendo cómo usar los tableros de GitHub Projects
+- [x] Entiendo las reglas de issues y PRs
