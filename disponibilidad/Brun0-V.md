@@ -1,4 +1,4 @@
-# Disponibilidad — @AlexisDeLaCruzHernandez
+# Disponibilidad — @Brun0-V
 
 > Completá este archivo y abrí un PR como parte del onboarding.
 > El horario refleja cuándo estás **físicamente presente en el laboratorio**.
@@ -9,9 +9,9 @@
 
 | Campo | Completar |
 |-------|-----------|
-| **Nombre completo** | Alexis de la Cruz Hernandez|
-| **Usuario GitHub** | AlexisDeLaCruzHernandez |
-| **Rol** | Becario |
+| **Nombre completo** |Vega Bruno |
+| **Usuario GitHub** |Brun0-V |
+| **Rol** |Becario  |
 | **Fecha de ingreso** | 2026-04-01 |
 
 ---
@@ -26,16 +26,17 @@ Dejá vacío lo que no aplica.
 
 | Horario   | Lunes | Martes | Miércoles | Jueves | Viernes | Sábado |
 |-----------|:-----:|:------:|:---------:|:------:|:-------:|:-------:|
-| 8:00–10:00  |   |   |   |   |   |   |
-| 10:00–12:00 |   |   |   |   |   |   |
+| 8:00–10:00  |   |  ✅ |   |   |   | ⚠️  |
+| 10:00–12:00 |   |  ✅ |   |   |   |  ⚠️ |
 | 12:00–14:00 |   |   |   |   |   |   |
 | 14:00–16:00 |   |   |   |   |   |   |
-| 16:00–18:00 |   |   |   | ✅ |   |   |
-| 18:00–20:00 |   |   |   | ✅ |   |   |
-| 20:00–22:00 |   |   |   | ✅ |   |   |
+| 16:00–18:00 |   |   |   |  ✅ | ✅  | ✅  |
+| 18:00–20:00 |   |   |   | ✅  |   | ✅  |
+| 20:00–22:00 |   |   |   |   |   |   |
 
 **Notas sobre disponibilidad** (opcional):
-> _Segundo cuatrimestre: solo estaré cursando los miercoles así que estaré disponible los martes_
+
+Sabados a la mañana están condicionados por la cursada de Fisica II
 
 ---
 

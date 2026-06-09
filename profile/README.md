@@ -12,13 +12,13 @@ La siguiente grilla refleja los horarios acordados de cada integrante. Se actual
 
 | Horario     | Lunes | Martes | Miércoles |    Jueves   |   Viernes   | Sábado |
 |-------------|-------|--------|-----------|-------------|-------------|--------|
-| 8:00–10:00  |       |        |           |             |             |        |
-| 10:00–12:00 |       |        |           |             |             |        |
+| 8:00–10:00  |       | Bruno Vega|           |             |             |        |
+| 10:00–12:00 |       | Bruno Vega|           |             |             |        |
 | 12:00–14:00 |       |        |           |             |             |        |
-| 14:00–16:00 |       |        |           |             |             |        |
-| 16:00–18:00 |       |        |           | Pablo Gomez, Alexis Hernandez | Pablo Gomez |        |
-| 18:00–20:00 |       |        |           | Alexis Hernandez |             |        |
-| 20:00–22:00 |       |        |           | Alexis Hernandez |             |        |
+| 14:00–16:00 |       |        |           |   | |        |
+| 16:00–18:00 |       |        |           | Pablo Gomez, Bruno Vega, Alexis Hernandez| Pablo Gomez, Bruno Vega |Bruno Vega|
+| 18:00–20:00 |       |        |           |Bruno Vega, Alexis Hernandez   |             | Bruno Vega|
+| 20:00–22:00 |       |        |           | Alexis Hernandez             |             |        |
 
 > _Para ver la disponibilidad detallada de cada integrante, consultá los archivos en [`disponibilidad/`](../disponibilidad/)._
 
