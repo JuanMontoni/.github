@@ -6,13 +6,12 @@
 ---
 
 ## Datos
-
 | Campo | Completar |
 |-------|-----------|
-| **Lucas Picchi** | |
-| **Pichi-cell** | |
-| **Colaborador externo** | Docente / Becario / Colaborador externo |
-| **2026-06-09** | AAAA-MM-DD |
+| **Nombre completo** | Lucas Ramiro Picchi |
+| **Usuario GitHub** | pichi-cell |
+| **Rol** | Colaborador externo |
+| **Fecha de ingreso** | 2026-06-16 |
 
 ---
 
