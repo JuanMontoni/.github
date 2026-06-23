@@ -7,6 +7,7 @@
 
 ## Datos
 
+| Campo | Completar |
 |-------|-----------|
 | **Nombre completo** |Juan Manuel Montoni |
 | **Usuario GitHub** |JuanMontoni |
